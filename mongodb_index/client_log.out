@@ -1,0 +1,17 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/home/dblab/bae/project/mongodb_index/new_app_client.py", line 39, in <module>
+    asyncio.run(main(host, port, n, batch_size, start_timestamp))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/dblab/bae/project/mongodb_index/new_app_client.py", line 27, in main
+    await send_data(host, port, batch)
+  File "/home/dblab/bae/project/mongodb_index/new_app_client.py", line 11, in send_data
+    await writer.drain()
+  File "/usr/lib/python3.10/asyncio/streams.py", line 371, in drain
+    await self._protocol._drain_helper()
+  File "/usr/lib/python3.10/asyncio/streams.py", line 167, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost

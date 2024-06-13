@@ -1,0 +1,15 @@
+nohup: ignoring input
+Server listening on 192.168.0.31:65432
+data inserted 1
+Traceback (most recent call last):
+  File "/home/dblab/bae/project/mongodb_index/mongo_index.py", line 118, in <module>
+    start_server('192.168.0.31', 65432)
+  File "/home/dblab/bae/project/mongodb_index/mongo_index.py", line 114, in start_server
+    process_data(data.decode('utf-8'))
+  File "/home/dblab/bae/project/mongodb_index/mongo_index.py", line 88, in process_data
+    data_dict['timestamp'] = datetime.strptime(timestamp_str, '%Y-%m-%dT%H:%M:%S.%f')
+  File "/usr/lib/python3.10/_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.10/_strptime.py", line 352, in _strptime
+    raise ValueError("unconverted data remains: %s" %
+ValueError: unconverted data remains: Z
