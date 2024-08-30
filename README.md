@@ -3,7 +3,7 @@
 ## Architecture
 
 <div style="display: grid; grid-template-columns: 1fr; grid-gap: 10px;">
-  <img src="https://github.com/user-attachments/assets/fab58319-edab-408f-a3ad-5f409f042551" alt="설명적 대체 텍스트" style="width: 60%; height: auto;">
+  <img src="https://github.com/user-attachments/assets/d55b1a68-e111-4684-8c6a-8a6e6e2143c3" alt="설명적 대체 텍스트" style="width: 60%; height: auto;">
 </div>
 
 ## Performance
